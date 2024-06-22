@@ -1,0 +1,29 @@
+### GET all the list of notes
+GET http://localhost:8000/notes
+
+
+### Create a new note
+POST http://localhost:8000/note
+Content-Type: application/json
+
+{
+    "title": "Create API endpoint",
+    "content": "Make a note app api"
+}
+
+
+### GET note based on id
+GET http://localhost:8000/note/1
+
+
+### Update note
+PUT http://localhost:8000/note/2
+Content-Type: application/json
+
+{
+    "title": "Create NoteApp updated",
+    "content": "Make a note app api (updated)"
+}
+
+### Delete Note
+DELETE http://localhost:8000/note/2

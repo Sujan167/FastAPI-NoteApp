@@ -1,0 +1,26 @@
+# Python-specific ignores
+*.pyc
+__pycache__/
+.DS_Store
+
+# Environment files
+.env
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+
+# Temporary files
+*.log
+
+# Ignore system-specific Python caches
+/.venv
+/.venv/
+
+# Ignore database migration files if using SQLAlchemy Alembic
+/alembic
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
