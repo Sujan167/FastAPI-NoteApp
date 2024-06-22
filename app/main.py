@@ -3,9 +3,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy.orm import Session
 from database import SessionLocal, engine, Base
-from pydantic import BaseModel
 from schema import NoteCreate, NoteInDB, NoteUpdate  # Import Pydantic models
-
 from models import Note
 
 # Create tables in the database
@@ -13,10 +11,6 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Pydantic model for request body validation
-class NoteCreate(BaseModel):
-    title: str
-    content: str
 
 # Dependency to get DB session
 def get_db():

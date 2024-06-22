@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-
+# Pydantic model for request body validation
 class NoteBase(BaseModel):
     title: str
     content: str
